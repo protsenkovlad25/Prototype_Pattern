@@ -9,7 +9,10 @@ namespace Shop_Prototype
         static void Main(string[] args)
         {
             Console.Write("Выберете устройство:\n");
-            Console.Write("-1-Laptop\n-2-Desktop\n-3-Notebook\n-4-Tablet\n");
+            Console.Write("(1) Laptop\n" +
+                "(2) Desktop\n" +
+                "(3) Notebook\n" +
+                "(4) Tablet\n");
             int device = Convert.ToInt32(Console.ReadLine());
 
             switch(device)
@@ -17,7 +20,7 @@ namespace Shop_Prototype
                 case 1:
                     Device laptop = new Laptop();
                     Device clonedLaptop = laptop.Clone();
-                    clonedLaptop.Mouse.Button = "1-button";
+                    laptop.Mouse.Button = "1-button";
                     laptop.GetInfo();
                     clonedLaptop.GetInfo();
                     break;

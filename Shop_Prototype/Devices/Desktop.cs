@@ -25,7 +25,16 @@ namespace Shop_Prototype.Devices
 
         public override Device Clone()
         {
-            return new Desktop();
+            return new Desktop()
+            {
+                Display = this.Display,
+                Keyboard = this.Keyboard,
+                TouchPad = this.TouchPad,
+                Mouse = this.Mouse,
+                CPU = this.CPU,
+                RAM = this.RAM,
+                ROM = this.ROM
+            };
         }
     }
 }
