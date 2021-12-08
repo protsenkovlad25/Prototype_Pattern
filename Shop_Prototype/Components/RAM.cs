@@ -9,5 +9,7 @@ namespace Shop_Prototype.Components
     class RAM
     {
         public string Number { get; set; }
+
+        public RAM Clone() { return new RAM { Number = this.Number }; }
     }
 }

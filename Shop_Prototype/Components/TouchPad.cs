@@ -9,5 +9,7 @@ namespace Shop_Prototype.Components
     class TouchPad
     {
         public string Button { get; set; }
+
+        public TouchPad Clone() { return new TouchPad { Button = this.Button }; }
     }
 }

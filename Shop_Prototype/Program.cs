@@ -21,6 +21,7 @@ namespace Shop_Prototype
                     Device laptop = new Laptop();
                     Device clonedLaptop = laptop.Clone();
                     laptop.Mouse.Button = "1-button";
+                    clonedLaptop.Mouse.Button = "3-button";
                     laptop.GetInfo();
                     clonedLaptop.GetInfo();
                     break;

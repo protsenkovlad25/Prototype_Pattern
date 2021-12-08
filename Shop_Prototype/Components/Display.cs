@@ -9,5 +9,7 @@ namespace Shop_Prototype.Components
     class Display
     {
         public string Resolution { get; set; }
+
+        public Display Clone() { return new Display { Resolution = this.Resolution }; }
     }
 }

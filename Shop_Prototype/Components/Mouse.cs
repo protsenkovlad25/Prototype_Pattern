@@ -9,5 +9,7 @@ namespace Shop_Prototype.Components
     class Mouse
     {
         public string Button { get; set; }
+
+        public Mouse Clone() { return new Mouse { Button = this.Button }; }
     }
 }

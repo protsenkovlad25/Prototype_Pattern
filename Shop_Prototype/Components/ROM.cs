@@ -9,5 +9,7 @@ namespace Shop_Prototype.Components
     class ROM
     {
         public string Number { get; set; }
+
+        public ROM Clone() { return new ROM { Number = this.Number }; }
     }
 }

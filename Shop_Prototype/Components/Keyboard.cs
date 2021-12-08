@@ -9,5 +9,7 @@ namespace Shop_Prototype.Components
     class Keyboard
     {
         public string Number { get; set; }
+
+        public Keyboard Clone() { return new Keyboard { Number = this.Number }; }
     }
 }

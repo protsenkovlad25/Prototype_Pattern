@@ -27,13 +27,13 @@ namespace Shop_Prototype.Devices
         {
             return new Tablet()
             {
-                Display = this.Display,
-                Keyboard = this.Keyboard,
-                TouchPad = this.TouchPad,
-                Mouse = this.Mouse,
-                CPU = this.CPU,
-                RAM = this.RAM,
-                ROM = this.ROM
+                Display = this.Display.Clone(),
+                Keyboard = this.Keyboard.Clone(),
+                TouchPad = this.TouchPad.Clone(),
+                Mouse = this.Mouse.Clone(),
+                CPU = this.CPU.Clone(),
+                RAM = this.RAM.Clone(),
+                ROM = this.ROM.Clone()
             };
         }
     }
